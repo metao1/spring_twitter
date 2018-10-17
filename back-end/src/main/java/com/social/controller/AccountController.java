@@ -74,14 +74,16 @@ public class AccountController {
     @RequestMapping(value = "/{user_id}/posts", method = RequestMethod.GET)
     @ResponseBody
     @CrossOrigin(origins = "*", maxAge = 3600, allowedHeaders = {"x-auth-token", "x-requested-with", "x-xsrf-token", "Content-Type"})
-    public Page<Post> getPosts(@PathVariable String user_id, Pageable pageable) {
+    public ResponseEntity<Page<Post>> getPosts(@PathVariable String user_id, Pageable pageable) {
         logger.info("user {} requested for posts", user_id);
         if (postService.findPosts(Long.valueOf(user_id), pageable) == null) {
             logger.error("there are not post for user {}", user_id);
-            return null;
+            return new  ResponseEntity(
+                    new CustomErrorType("user with " + user_id + "has error exist "),
+                    HttpStatus.CONFLICT);
         }
 
-        return postService.findPosts(Long.valueOf(user_id), pageable);
+        return new ResponseEntity<>(postService.findPosts(Long.valueOf(user_id), pageable), HttpStatus.ACCEPTED) ;
     }
 
 }
