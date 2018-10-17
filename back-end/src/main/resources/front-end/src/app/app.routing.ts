@@ -7,7 +7,8 @@ import {MainComponent} from "./components/main/main.component";
 
 const appRoutes: Routes = [
   {path: 'profile', component: ProfileComponent, canActivate: [UrlPermission]},
-  {path: '', component: MainComponent, redirectTo: 'home', canActivate: [UrlPermission]},
+  {path: '', pathMatch: 'full', component: MainComponent, canActivate: [UrlPermission]},
+  {path: 'home', component: MainComponent, canActivate: [UrlPermission]},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
 
