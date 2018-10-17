@@ -1,0 +1,2328 @@
+/*! CSS Used from: https://abs.twimg.com/a/1539634420/css/t1/twitter_core.bundle.css */
+a {
+  background: transparent;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+b {
+  font-weight: bold;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="radio"] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+a {
+  color: #1c94e0;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  transition: box-shadow .15s ease-in-out;
+}
+
+button:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px #fff, 0 0 2px 4px rgba(0, 132, 180, 0.5);
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  text-align: inherit;
+}
+
+[tabindex="-1"]:focus {
+  outline: none !important;
+}
+
+a:focus {
+  outline: 0;
+}
+
+.u-borderRadiusInherit {
+  border-radius: inherit !important;
+}
+
+.u-hidden {
+  display: none !important;
+}
+
+.u-hiddenVisually {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  font-size: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+}
+
+.u-dir[dir="ltr"] {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: embed;
+}
+
+.Icon {
+  background: transparent;
+  display: inline-block;
+  font-style: normal;
+  vertical-align: baseline;
+  position: relative;
+}
+
+.Icon:after, .Icon:before {
+  display: block;
+  font-family: "edgeicons";
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Icon--small {
+  font-size: 16px;
+  line-height: 15px;
+}
+
+.Icon--medium {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.Icon--large {
+  font-size: 21px;
+  line-height: 1;
+}
+
+.Icon--add:before {
+  content: "\f183";
+}
+
+.Icon--check:before {
+  content: "\f170";
+}
+
+.Icon--close:before {
+  content: "\f045";
+}
+
+.Icon--follower:before {
+  content: "\f002";
+}
+
+.Icon--geo:before {
+  content: "\f031";
+}
+
+.Icon--gif:before {
+  content: "\f028";
+}
+
+.Icon--me:before {
+  content: "\f056";
+}
+
+.Icon--media:before {
+  content: "\f109";
+}
+
+.Icon--pollBar:before {
+  content: "\f199";
+}
+
+.Icon--protected:before {
+  content: "\f096";
+}
+
+.Icon--search:before {
+  content: "\f058";
+}
+
+.Icon--smiley:before {
+  content: "\f033";
+}
+
+.Icon--unfollow:before {
+  content: "\f097";
+}
+
+.Icon--verified:before {
+  content: "\f032";
+  font-size: .7em;
+  left: 26%;
+  line-height: 1;
+  position: absolute;
+  top: 20%;
+}
+
+.Icon--verified:after {
+  content: "\f099";
+  line-height: 1;
+  position: relative;
+}
+
+.Icon--protected {
+  font-size: 1.1em;
+  padding-left: 1px;
+}
+
+.Icon--follower {
+  color: #1da1f2;
+}
+
+.Icon--protected {
+  color: #14171a;
+}
+
+.Icon--smiley {
+  color: #aab8c2;
+}
+
+.Icon--verified {
+  color: #1da1f2;
+}
+
+.Icon--verified:before {
+  color: #fff;
+}
+
+button {
+  border: 0;
+}
+
+.btn {
+  background-color: #ccd6dd;
+  background-repeat: no-repeat;
+  border: 1px solid #e6ecf0;
+  border-radius: 4px;
+  color: #66757f;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: normal;
+  padding: 8px 16px;
+  position: relative;
+}
+
+.btn .Icon {
+  background: transparent;
+}
+
+.btn:focus, .btn:active {
+  outline: 0 !important;
+}
+
+.btn {
+  background-color: #f5f8fa;
+  background-image: linear-gradient(#fff, #f5f8fa);
+}
+
+.btn:focus {
+  background: #fff;
+  border-color: #fff;
+  box-shadow: 0 0 0 2px #fff, 0 0 2px 4px rgba(0, 132, 180, 0.5);
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: #14171a;
+  text-decoration: none;
+  background-color: #e6ecf0;
+  background-image: linear-gradient(#fff, #e6ecf0);
+  border-color: #e6ecf0;
+}
+
+.btn:focus:hover {
+  border-color: #fff;
+}
+
+.btn:active {
+  color: #14171a;
+  background: #e6ecf0;
+  border-color: #ccd6dd;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.EdgeButton--primary .replying-text {
+  display: none;
+}
+
+.icon-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #1c94e0;
+  opacity: .8;
+  -ms-filter: "alpha(opacity=80)";
+  padding: 4px 10px;
+}
+
+.icon-btn .Icon {
+  font-size: 20px;
+}
+
+.icon-btn:focus {
+  background: #fff;
+  border-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.icon-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #1c94e0;
+  color: #1c94e0;
+}
+
+.icon-btn:active {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #1c94e0;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
+  color: #1c94e0;
+}
+
+.icon-btn .text {
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 3px;
+  position: relative;
+  top: -6px;
+}
+
+.tweet-camera {
+  height: auto;
+  width: auto;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  z-index: 900;
+  display: none;
+  float: left;
+  padding: 10px 0;
+  margin: 2px 0 0;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  background-clip: padding-box;
+}
+
+.dropdown-menu ul:focus {
+  outline: 0;
+}
+
+.dropdown-menu li {
+  display: block;
+  float: none;
+  line-height: inherit;
+  position: relative;
+}
+
+.dropdown-menu li > a {
+  clear: both;
+  color: #66757f;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  float: none;
+  line-height: 20px;
+  margin: 0;
+  padding: 5px 20px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.dropdown-menu li > a:focus .account-group b {
+  text-decoration: none;
+}
+
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus {
+  color: #fff;
+  background: rgba(0, 132, 180, 0.5);
+  text-decoration: none;
+}
+
+.dropdown-menu .typeahead-items li > a:focus, .dropdown-menu .typeahead-items li > a:hover {
+  color: #1c94e0;
+  background: #eaf5fd;
+}
+
+.dropdown-menu .typeahead-items:not(.typeahead-accounts) li > a:focus, .dropdown-menu .typeahead-items:not(.typeahead-accounts) li > a:hover, .dropdown-menu .typeahead-accounts a:focus .fullname, .dropdown-menu .typeahead-accounts a:hover .fullname, .dropdown-menu .typeahead-accounts .typeahead-accounts-shortcut a:focus, .dropdown-menu .typeahead-accounts .typeahead-accounts-shortcut a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-menu .dropdown-caret {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  width: 18px;
+  height: 10px;
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-caret.center {
+  left: 50%;
+  margin-left: -9px;
+}
+
+.dropdown-caret .caret-outer, .dropdown-caret .caret-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  margin-left: -1px;
+}
+
+.dropdown-caret .caret-outer {
+  border-bottom: 10px solid #657786;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  height: auto;
+  left: 0;
+  top: 0;
+  width: auto;
+}
+
+.dropdown-caret .caret-inner {
+  top: 1px;
+  left: 1px;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #fff;
+  border-bottom-color: #fff;
+}
+
+.typeahead {
+  padding: 5px 0;
+}
+
+.typeahead-items li > a {
+  padding: 7px 15px 7px 10px;
+  font-size: 14px;
+}
+
+.typeahead {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  right: auto;
+  left: 0;
+  display: none;
+  margin-top: -3px;
+  padding: 5px 0;
+  border-radius: 0 0 4px 4px;
+}
+
+.typeahead .dropdown-caret {
+  display: none;
+  left: 16px;
+}
+
+.typeahead-items {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.typeahead-items li {
+  width: 100%;
+  white-space: nowrap;
+  float: left;
+  clear: left;
+}
+
+.typeahead-items li > a {
+  display: block;
+  padding: 7px 15px 7px 10px;
+  overflow: hidden;
+  color: #66757f;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.typeahead-in-conversation {
+  margin: -3px 10px 8px 17px;
+}
+
+.typeahead-in-conversation-text {
+  margin-left: 5px;
+}
+
+.typeahead a, .typeahead .fullname {
+  color: #14171a;
+}
+
+.typeahead .username, .typeahead-social-context {
+  color: #657786;
+}
+
+.typeahead .avatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.typeahead .social-context .avatar {
+  margin-right: 10px;
+}
+
+.typeahead-accounts li > a {
+  line-height: 32px;
+}
+
+.typeahead .typeahead-user-item-info {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.typeahead-item:hover .typeahead-user-item-info .fullname {
+  color: inherit;
+}
+
+.typeahead-accounts .typeahead-social-context {
+  color: #657786;
+  font-size: 12px;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.typeahead-accounts.social-context .typeahead-account-item .typeahead-user-item-info {
+  margin-top: 8px;
+  line-height: 15px;
+}
+
+.typeahead-accounts.social-context li > a {
+  line-height: 16px;
+  padding: 7px 15px 6px 10px;
+}
+
+.typeahead-accounts.social-context .typeahead-accounts-shortcut > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.typeahead a, .typeahead .fullname {
+  color: #14171a;
+}
+
+.hidden {
+  display: none;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.tweet-form:after, .tweet-form:before {
+  content: " ";
+  display: table;
+}
+
+.tweet-form:after {
+  clear: both;
+}
+
+.tweet-user {
+  padding: 10px 12px;
+  background-color: #f5f8fa;
+  border-radius: 0 0 5px 5px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  -moz-force-broken-image-icon: 1;
+}
+
+.size32 {
+  width: 32px;
+  height: 32px;
+}
+
+b {
+  font-weight: normal;
+}
+
+.fullname {
+  word-break: break-all;
+  color: #14171a;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.account-group .username {
+  font-size: 14px;
+  color: #657786;
+}
+
+.account-group:focus {
+  text-decoration: none;
+}
+
+.account-group .UserBadges {
+  font-size: .9em;
+}
+
+.account-group .UserBadges .Icon {
+  padding-left: 2px;
+}
+
+.account-group .UserBadges .Icon--verified {
+  font-size: 1.2em;
+}
+
+.inline-reply-user-image {
+  display: none;
+}
+
+.EdgeButton, .EdgeButton:visited {
+  border-radius: 100px;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.EdgeButton:active, .EdgeButton:focus, .EdgeButton:hover {
+  text-decoration: none;
+}
+
+.EdgeButton--medium {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 6px 16px;
+}
+
+.EdgeButton--primary {
+  background-color: #1da1f2;
+  border: 1px solid #1da1f2;
+  color: #fff;
+}
+
+.EdgeButton--primary:hover {
+  background-color: #006dbf;
+  border-color: #006dbf;
+  color: #fff;
+}
+
+.EdgeButton--primary:focus {
+  border-color: #1da1f2;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #71c9f8;
+  color: #fff;
+}
+
+.EdgeButton--primary:active {
+  background-color: #006dbf;
+  border-color: #006dbf;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #1da1f2;
+  color: #fff;
+}
+
+.EdgeButton--primary.disabled, .EdgeButton--primary[disabled], .EdgeButton--primary[disabled]:hover {
+  opacity: .3;
+  -ms-filter: "alpha(opacity=30)";
+}
+
+.EdgeButton--secondary {
+  background-color: #fff;
+  border: 1px solid #1da1f2;
+  color: #1da1f2;
+}
+
+.EdgeButton--secondary:hover {
+  background-color: #eaf5fd;
+  color: #1da1f2;
+}
+
+.EdgeButton--secondary:focus {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #71c9f8;
+  color: #1da1f2;
+  outline: 0;
+}
+
+.EdgeButton--secondary:active {
+  background-color: #006dbf;
+  border-color: #006dbf;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #1da1f2;
+  color: #fff;
+}
+
+.EdgeButton.EdgeButton--icon {
+  border-radius: 50%;
+  line-height: 1;
+  padding: 0;
+}
+
+.EdgeButton--icon, .EdgeButton--icon.EdgeButton--medium {
+  font-size: 18px;
+  height: 34px;
+  width: 34px;
+}
+
+.top-timeline-tweet-box-user-image {
+  right: 148px;
+  position: absolute;
+  top: 10px;
+}
+
+.top-timeline-tweetbox .timeline-tweet-box {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border: 1px solid #e6ecf0;
+}
+
+.top-timeline-tweetbox .tweet-user {
+  border-radius: 0;
+  position: relative;
+}
+
+.top-timeline-tweetbox .timeline-tweet-box .t1-form {
+  margin-left: 56px;
+}
+
+.tweet-form .tweet-content {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.tweet-form.condensed .tweet-content {
+  margin: 0;
+}
+
+.tweet-form .tweet-box {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 80px;
+  overflow: hidden;
+  padding: 8px;
+  vertical-align: top;
+  width: auto;
+}
+
+.tweet-form .tweet-box-overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  bottom: 1px;
+  display: none;
+  left: 1px;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  z-index: 10;
+}
+
+.tweet-form.condensed .tweet-box {
+  color: #657786;
+  max-height: 36px;
+  min-height: 36px;
+}
+
+.tweet-form div.rich-editor {
+  display: block;
+  word-wrap: break-word;
+  -webkit-nbsp-mode: normal;
+}
+
+.tweet-form.condensed div.rich-editor {
+  overflow-y: hidden;
+}
+
+.is-showPlaceholder:before {
+  pointer-events: none;
+}
+
+.tweet-form div.rich-editor:empty:before {
+  content: attr(data-placeholder-default);
+  color: #aab8c2;
+  position: absolute;
+}
+
+.tweet-form div.rich-editor:empty:focus:before {
+  opacity: .8;
+  -ms-filter: "alpha(opacity=80)";
+}
+
+.tweet-form.condensed div.rich-editor:empty:before {
+  color: #657786;
+}
+
+.tweet-form.condensed .rich-editor {
+  word-wrap: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.tweet-form.condensed .reply-users {
+  display: none;
+}
+
+.tweet-form .reply-users {
+  font-size: 14px;
+  margin-top: -4px;
+  padding-bottom: 8px;
+  color: #657786;
+}
+
+.RichEditor {
+  background: #fff;
+  border: 1px solid #e6ecf0;
+  border-radius: 8px;
+  line-height: 20px;
+}
+
+.RichEditor .typeahead {
+  margin: 1px 0 0 0;
+}
+
+.TweetBoxAttachments {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-style: solid;
+  border-top: 0;
+  border-width: 1px;
+  display: none;
+}
+
+.RichEditor-container {
+  position: relative;
+}
+
+.RichEditor-scrollContainer {
+  overflow-y: auto;
+  margin: -20px 0;
+  max-height: 284px;
+  position: relative;
+}
+
+.top-timeline-tweetbox .RichEditor-scrollContainer {
+  max-height: none;
+}
+
+.RichEditor div[contenteditable], .RichEditor div[contenteditable]:focus {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.RichEditor.RichEditor--emojiPicker div[contenteditable], .RichEditor.RichEditor--emojiPicker div[contenteditable]:focus {
+  padding-right: 31px;
+}
+
+.RichEditor-pictographs {
+  font-size: 14px;
+}
+
+.RichEditor-rightItems {
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+}
+
+.RichEditor-leftItems {
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0;
+}
+
+.RichEditor-topItems {
+  margin: 4px 8px 0 0;
+  top: 0;
+}
+
+.RichEditor-bottomItems {
+  bottom: 0;
+  margin: 0 8px 4px 4px;
+}
+
+.RichEditor-rightItems > div {
+  margin-left: 8px;
+}
+
+.tweet-form.condensed .RichEditor-leftItems, .tweet-form.condensed .RichEditor-rightItems {
+  display: none;
+}
+
+.RichEditor-mozillaCursorWorkaround {
+  display: inline;
+}
+
+.tweet-form.condensed .TweetBoxToolbar {
+  display: none;
+}
+
+.tweet-form .attribution {
+  display: none;
+  margin-top: 8px;
+  opacity: 0;
+  -ms-filter: "alpha(opacity=0)";
+}
+
+.photo-selector:hover .btn {
+  border-color: #1c94e0;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tweet-form .thumbnail-container {
+  background-color: #f5f8fa;
+  border-radius: 0;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  box-shadow: inset 0 1px 0 #ccd6dd;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: none;
+  max-width: 100%;
+  overflow: hidden;
+  transition: height 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.tweet-form .thumbnail-container .thumbnail-wrapper {
+  padding: 8px 16px;
+}
+
+.tweet-form .ComposerThumbnails {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tweet-form .thumbnail-container .preview-message {
+  font-size: 14px;
+  color: #14171a;
+}
+
+.tweet-form .thumbnail-container .preview-message .Icon {
+  top: 2px;
+}
+
+.tweet-form .thumbnail-container .preview-message .start-tagging {
+  margin-top: 8px;
+}
+
+.photo-selector {
+  position: relative;
+}
+
+.image-selector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-selector .file-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  font-size: 50px;
+  cursor: pointer;
+  opacity: 0;
+  -ms-filter: "alpha(opacity=0)";
+  padding-top: 100px;
+}
+
+.CountdownCounter.tweet-counter {
+  color: #657786;
+  margin-right: 4px;
+  padding-bottom: 0;
+}
+
+.tweet-form .tweet-button {
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+}
+
+.js-add-tweet {
+  margin-right: 12px;
+}
+
+.geo-picker:not(.inline-geo-picker) .geo-status {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 95px;
+  margin-left: 3px;
+  overflow: hidden;
+  color: inherit;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: auto;
+}
+
+.geo-picker .dropdown-menu {
+  width: 320px;
+  outline: 0;
+}
+
+.inline-geo-picker {
+  margin-left: 2px;
+}
+
+.inline-geo-picker .dropdown-menu {
+  margin-top: 4px;
+  left: -1px;
+}
+
+.inline-geo-picker .geo-status {
+  color: #657786;
+  font-size: 12px;
+}
+
+.inline-geo-picker .Icon--geo {
+  color: #aab8c2;
+  top: 2px;
+}
+
+.user-select-container.photo-tagging-container {
+  margin-top: -7px;
+  position: absolute;
+  left: -100px;
+  width: 350px;
+}
+
+.tweet-box .photo-tagging-controls input[type=text] {
+  box-shadow: none;
+}
+
+.home-tweet-box .user-select-container .dropdown-menu {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+}
+
+.start-tagging.no-users {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.start-tagging {
+  background: transparent;
+  border: 1px solid;
+  border-radius: 4px;
+  line-height: 24px;
+  padding: 0 10px;
+}
+
+.typeahead-empty-suggestions {
+  padding: 10px;
+  padding-top: 1px;
+  color: #66757f;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.tagged-users {
+  margin-left: 4px;
+}
+
+.TweetBox-photoIntent .add-photo-label {
+  display: none;
+}
+
+.TweetBox-photoIntent .photo-selector {
+  margin-right: 0;
+  position: absolute;
+  right: -1px;
+  z-index: 1;
+}
+
+.TweetBox-photoIntent .photo-selector .btn {
+  padding-right: 16px;
+}
+
+.TweetBox-photoIntent .photo-selector:hover .btn {
+  background: 0;
+  border: 1px solid transparent;
+}
+
+.TweetBox-photoIntent .photo-selector .btn:active, .TweetBox-photoIntent .photo-selector .btn:focus {
+  background: 0;
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+
+.TweetBoxUploadProgress {
+  color: #657786;
+  display: none;
+}
+
+.TweetBoxUploadProgress-bar {
+  border: 1px solid #ccd6dd;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  width: 262px;
+}
+
+.TweetBoxUploadProgress-barPosition {
+  background-color: #1da1f2;
+  height: 10px;
+  transition: width 1s linear;
+  width: 0;
+}
+
+.TweetBoxUploadProgress .TweetBoxUploadProgress-spinner {
+  display: inline-block;
+  margin-left: 4px;
+  position: relative;
+  top: 3px;
+}
+
+.TweetBoxUploadProgress .TweetBoxUploadProgress-uploading, .TweetBoxUploadProgress .TweetBoxUploadProgress-processing {
+  display: none;
+}
+
+.tweet-form .CardComposer {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  display: none;
+  max-width: 100%;
+  overflow: hidden;
+  transition: height 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.user-select-container {
+  background-color: #fff;
+  padding: 7px 0 0;
+}
+
+.user-select-container .typeahead-item {
+  display: none;
+}
+
+.user-select-container .tagging-dropdown .dropdown-menu {
+  box-shadow: 0 1px 4px -2px rgba(0, 0, 0, 0.25);
+  display: block;
+  padding: 7px 0 0;
+  width: 100%;
+}
+
+.user-select-container .select-status {
+  float: right;
+}
+
+.user-select-container .select-status {
+  display: none;
+}
+
+.user-select-controls {
+  border: 1px solid #e6ecf0;
+  border-radius: 3px;
+  margin: 0 6px 3px;
+}
+
+.user-select-controls .Icon {
+  margin: 5px 2px 0 8px;
+  opacity: .5;
+  -ms-filter: "alpha(opacity=50)";
+}
+
+.user-select-controls input {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  width: 290px;
+}
+
+.user-select-controls input:focus {
+  border-color: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.t1-form {
+  margin-bottom: 0;
+}
+
+.t1-label, input, textarea, div[contenteditable] {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.t1-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #14171a;
+  cursor: pointer;
+}
+
+input, textarea, div[contenteditable] {
+  display: inline-block;
+  width: 210px;
+  padding: 4px;
+  margin: 0;
+  outline: 0;
+  background-color: #fff;
+  border: 1px solid #e6ecf0;
+  border-radius: 3px;
+}
+
+input[type=radio] {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 3px 0;
+  line-height: normal;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input[type=file] {
+  background-color: #fff;
+  padding: initial;
+  border: initial;
+  line-height: initial;
+  box-shadow: none;
+}
+
+input[type=file] {
+  height: 30px;
+  line-height: 30px;
+}
+
+textarea {
+  height: auto;
+}
+
+input, textarea, div[contenteditable] {
+  transition: background .2s linear;
+}
+
+input:focus, textarea:focus, div[contenteditable="true"]:focus {
+  outline: 0;
+  color: #14171a;
+  border-color: rgba(0, 132, 180, 0.5);
+}
+
+input[type=file]:focus, input[type=radio]:focus {
+  outline: 1px dotted #66757f;
+  outline: auto 5px -webkit-focus-ring-color;
+  box-shadow: none;
+}
+
+.disabled, .disabled:hover, .disabled:focus, .disabled:active, input[disabled] {
+  background: #f5f8fa;
+  border-color: #ccd6dd;
+  cursor: not-allowed;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #657786;
+  opacity: 1;
+  -ms-filter: "alpha(opacity=100)";
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #657786;
+  opacity: 1;
+  -ms-filter: "alpha(opacity=100)";
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #657786;
+  opacity: 1;
+  -ms-filter: "alpha(opacity=100)";
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #657786;
+  opacity: 1;
+  -ms-filter: "alpha(opacity=100)";
+}
+
+input::placeholder, textarea::placeholder {
+  color: #657786;
+  opacity: 1;
+  -ms-filter: "alpha(opacity=100)";
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  opacity: .6;
+  -ms-filter: "alpha(opacity=60)";
+}
+
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder {
+  opacity: .6;
+  -ms-filter: "alpha(opacity=60)";
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  opacity: .6;
+  -ms-filter: "alpha(opacity=60)";
+}
+
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
+  opacity: .6;
+  -ms-filter: "alpha(opacity=60)";
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+  opacity: .6;
+  -ms-filter: "alpha(opacity=60)";
+}
+
+.Spinner {
+  background-image: url(https://abs.twimg.com/a/1539634420/img/t1/spinners/spinner-rosetta-gray-14x14.gif);
+  background-position: center;
+  display: none;
+}
+
+.Spinner--size14 {
+  height: 14px;
+  width: 14px;
+}
+
+/*! CSS Used from: https://abs.twimg.com/a/1539634420/css/t1/twitter_more_1.bundle.css */
+.tweet-box textarea {
+  resize: vertical;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 #fff;
+}
+
+.tweet-box textarea:hover {
+  outline: 0;
+  border: 1px solid #657786;
+  cursor: text !important;
+}
+
+.tweet-counter {
+  background-color: transparent;
+  color: #657786;
+  display: inline-block;
+  border: 0;
+  font-size: 14px;
+  padding-bottom: 1px;
+}
+
+.EmojiPicker-trigger {
+  color: #aab8c2;
+  line-height: 1;
+}
+
+.EmojiPicker-trigger .Icon {
+  color: inherit;
+  font-size: 19px;
+}
+
+.EmojiPicker-trigger:hover, .EmojiPicker-trigger:active, .EmojiPicker-trigger:focus {
+  outline: 0;
+}
+
+.EmojiPicker-dropdownMenu.dropdown-menu {
+  height: 350px;
+  padding: 0;
+  top: 115%;
+  width: 280px;
+}
+
+.EmojiPicker-content.Caret:before, .EmojiPicker-content.Caret.Caret--stroked:after {
+  left: 10px;
+}
+
+.EmojiPicker-content.Caret:before {
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 8px;
+}
+
+.EmojiPicker-content.Caret:after {
+  border-color: #f5f8fa;
+  border-width: 8px;
+}
+
+.EmojiPicker-content {
+  height: 100%;
+  text-align: right;
+  width: 100%;
+}
+
+.Caret {
+  position: relative;
+}
+
+.Caret:before, .Caret--stroked:after {
+  border-style: solid;
+  border-width: 5px;
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
+.FoundMediaSearch-query {
+  background-color: #f5f8fa;
+  background-repeat: repeat-x;
+  background-image: linear-gradient(#fff, #f5f8fa);
+  border: 1px solid #e6ecf0;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  padding: 8px;
+  margin: 0;
+}
+
+.FoundMediaSearch-query .Icon--search {
+  color: #66757f;
+  left: 16px;
+  position: absolute;
+  top: 13px;
+}
+
+.FoundMediaSearch-query input[type=text].FoundMediaSearch-queryInput {
+  padding: 4px 4px 4px 24px;
+  transition: none;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.FoundMediaSearch-dropdownMenu.dropdown-menu {
+  padding: 0;
+  width: 450px;
+}
+
+.FoundMediaSearch-content.Caret:before, .FoundMediaSearch-content.Caret.Caret--stroked:after {
+  left: 24px;
+}
+
+.FoundMediaSearch-content.Caret:before {
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 8px;
+}
+
+.FoundMediaSearch-content.Caret:after {
+  border-color: #f5f8fa;
+  border-width: 8px;
+}
+
+.FoundMediaSearch-results {
+  overflow: auto;
+  min-height: 270px;
+  max-height: 810px;
+  padding: 3px 6px;
+  will-change: transform;
+}
+
+.FoundMediaSearch-items {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.FoundMediaSearch-dropdownMenu .FoundMediaSearch-pagination {
+  background: url(https://abs.twimg.com/a/1539634420/img/t1/spinners/spinner-rosetta-blue-26x26.gif) no-repeat center center;
+  clear: both;
+  display: block;
+  height: 26px;
+  padding: 24px 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) {
+  .FoundMediaSearch-dropdownMenu .FoundMediaSearch-pagination {
+    background-image: url(https://abs.twimg.com/a/1539634420/img/t1/spinners/spinner-rosetta-blue-26x26@2x.gif);
+    background-size: 26px 26px;
+  }
+}
+
+.TweetBoxExtras {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.TweetBoxExtras .icon-btn .Icon {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.TweetBoxExtras-item {
+  display: inline-block;
+  position: relative;
+}
+
+.TweetBoxExtras-item + .TweetBoxExtras-item {
+  margin-left: 5px;
+}
+
+.TweetBoxToolbar {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.TweetBoxToolbar-tweetButton {
+  margin-left: auto;
+}
+
+.ComposerDragHelp {
+  border: 3px dashed #1da1f2;
+  border-radius: 8px;
+  bottom: 0;
+  color: #ccd6dd;
+  display: none;
+  font-size: 18px;
+  font-weight: bold;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  pointer-events: none;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.ComposerDragHelp-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.ComposerVideoInfo {
+  border-top: 1px solid #e6ecf0;
+  font-size: 14px;
+  padding-top: 9px;
+  margin-top: 8px;
+}
+
+.PollingCardComposer {
+  background-color: #f5f8fa;
+  border-radius: 0 0 3px 3px;
+  box-shadow: inset 0 1px 0 #ccd6dd;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 10px 0;
+  position: relative;
+}
+
+.PollingCardComposer .PollingCardComposer-remove {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+}
+
+.PollingCardComposer .PollingCardComposer-addOption {
+  display: none;
+  height: 20px;
+  margin: 10px 0 15px 36px;
+  overflow: hidden;
+}
+
+.PollingCardComposer .PollingCardComposer-addOption {
+  display: block;
+}
+
+.PollingCardComposer .PollingCardComposer-removeOption {
+  color: #ccd6dd;
+  display: none;
+  font-size: 8px;
+  height: 20px;
+  margin: 5px 5px;
+  padding: 0 7px;
+}
+
+.PollingCardComposer .PollingCardComposer-option {
+  display: none;
+  padding: 2px 0 3px 0;
+}
+
+.PollingCardComposer .PollingCardComposer-option1, .PollingCardComposer .PollingCardComposer-option2 {
+  display: block;
+}
+
+.PollingCardComposer .PollingCardComposer-option4 {
+  margin-bottom: 10px;
+}
+
+.PollingCardComposer-option .PollingCardComposer-optionRadio {
+  float: left;
+  height: 30px;
+  margin: auto 10px;
+  width: 15px;
+}
+
+.PollingCardComposer-option div.PollingCardComposer-optionInput {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 300px;
+}
+
+.PollingCardComposer .PollingCardComposer-optionInput.is-showPlaceholder:before {
+  content: attr(data-placeholder);
+  color: #aab8c2;
+  position: absolute;
+}
+
+.PollingCardComposer-option .PollingCardComposer-optionInput.is-showPlaceholder:focus:before {
+  opacity: .8;
+  -ms-filter: "alpha(opacity=80)";
+}
+
+.PollingCardComposer .PollingCardComposer-pollDuration {
+  color: #aab8c2;
+  padding: 12px 0 10px 36px;
+  border-top: solid 1px #ccd6dd;
+}
+
+.PollingCardComposer .PollingCardComposer-durationLabel, .PollingCardComposer .PollingCardComposer-defaultDuration {
+  padding-top: 4px;
+}
+
+.PollingCardComposer .PollingCardComposer-customDuration {
+  color: #66757f;
+  display: none;
+}
+
+.PollingCardComposer .PollingCardComposer-defaultDuration {
+  display: inline-block;
+}
+
+.PollingCardComposer .PollingCardComposer-customDuration--daysLabel, .PollingCardComposer .PollingCardComposer-customDuration--hoursLabel, .PollingCardComposer .PollingCardComposer-customDuration--minutesLabel {
+  margin-left: 5px;
+}
+
+.PollingCardComposer .PollingCardComposer-customDuration--days, .PollingCardComposer .PollingCardComposer-customDuration--hours, .PollingCardComposer .PollingCardComposer-customDuration--minutes {
+  height: 28px;
+  margin-left: 2px;
+}
+
+/*! CSS Used from: https://abs.twimg.com/a/1539634420/css/t1/twitter_more_2.bundle.css */
+.dropdown-menu {
+  width: auto;
+}
+
+.dropdown-menu input[type=text] {
+  width: 230px;
+}
+
+/*! CSS Used from: Embedded */
+a, a:hover, a:focus, a:active {
+  color: #1DA1F2;
+}
+
+.u-textUserColor, .u-textUserColorHover:hover, .u-textUserColorHover:focus {
+  color: #1DA1F2 !important;
+}
+
+.u-borderUserColorLight, .u-borderUserColorLightFocus:focus {
+  border-color: #A4D9F9 !important;
+}
+
+a, .icon-btn {
+  color: #1DA1F2;
+}
+
+.photo-selector:hover .btn, .icon-btn:hover, .icon-btn:active {
+  border-color: #1DA1F2;
+  border-color: rgba(29, 161, 242, 0.4);
+  color: #1DA1F2;
+}
+
+.photo-selector:hover .btn, .icon-btn:hover {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(29, 161, 242, 0.1));
+}
+
+.EdgeButton--primary, .EdgeButton--primary:focus {
+  background-color: #4AB3F4;
+  border-color: transparent;
+}
+
+.EdgeButton--primary:hover, .EdgeButton--primary:active {
+  background-color: #1DA1F2;
+  border-color: #1DA1F2;
+}
+
+.EdgeButton--primary:focus {
+  box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px;
+}
+
+.EdgeButton--primary:active {
+  box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px #4AB3F4;
+}
+
+.EdgeButton--secondary, .EdgeButton--secondary:hover, .EdgeButton--secondary:focus, .EdgeButton--secondary:active {
+  border-color: #1DA1F2;
+  color: #1DA1F2;
+}
+
+.EdgeButton--secondary:hover, .EdgeButton--secondary:active {
+  background-color: #E8F5FD;
+}
+
+.EdgeButton--secondary:focus {
+  box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px rgba(29, 161, 242, 0.4);
+}
+
+.EdgeButton--secondary:active {
+  box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px #1DA1F2;
+}
+
+.btn:focus, button:focus {
+  box-shadow: 0 0 0 2px #FFFFFF, 0 0 2px 4px rgba(29, 161, 242, 0.4);
+}
+
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus {
+  background-color: #1DA1F2 !important;
+}
+
+.dropdown-menu .typeahead-items li > a:focus, .dropdown-menu .typeahead-items li > a:hover {
+  background-color: #E8F5FD !important;
+  color: #1DA1F2 !important;
+}
+
+.typeahead a:hover, .typeahead a:hover .fullname {
+  color: #1DA1F2 !important;
+}
+
+.home-tweet-box {
+  background-color: #E8F5FD;
+}
+
+.top-timeline-tweetbox .timeline-tweet-box .tweet-form.condensed .tweet-box {
+  color: #1DA1F2;
+}
+
+.RichEditor, .TweetBoxAttachments {
+  border-color: #C6E7FB;
+}
+
+input:focus, textarea:focus, div[contenteditable="true"]:focus {
+  border-color: #A4D9F9;
+  box-shadow: inset 0 0 0 1px rgba(29, 161, 242, 0.7);
+}
+
+.tweet-box textarea:focus, .tweet-box input[type=text], .tweet-box[contenteditable="true"]:focus {
+  border-color: #A4D9F9;
+  box-shadow: 0 0 0 1px #A4D9F9;
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+  svg.RadialCounter {
+    margin-bottom: -4px;
+    overflow: visible;
+    transform: rotate(-90deg);
+  }
+
+  .RadialCounter--safe {
+    stroke: #1da1f2;
+  }
+
+  .RadialCounter-progressUnderlay {
+    stroke: #ccd6dd;
+  }
+}
+
+/*! CSS Used fontfaces */
+@font-face {
+  font-family: "edgeicons";
+  src: url("https://abs.twimg.com/a/1539634420/font/edge-icons-Regular.eot");
+  src: url("https://abs.twimg.com/a/1539634420/font/edge-icons-Regular.eot#iefix") format("embedded-opentype"), url("https://abs.twimg.com/a/1539634420/font/edge-icons-Regular.woff") format("woff"), url("https://abs.twimg.com/a/1539634420/font/edge-icons-Regular.ttf") format("truetype");
+}

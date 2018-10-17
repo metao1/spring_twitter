@@ -1,0 +1,2 @@
+insert into user(full_name,password,role,username) values('Mehrdad Allahkarami','mehrdad','ADMIN','mehrdadallahkarami@gmail.com');
+insert into post(content,user_id) values('some content from the post of Mehrdad', 7);
