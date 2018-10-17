@@ -20,7 +20,7 @@ import java.util.Collections;
 import java.util.Map;
 
 /**
- * @author kamal berriga
+ * @author Mehrdad A.Karami
  */
 @RestController
 @RequestMapping("/account")

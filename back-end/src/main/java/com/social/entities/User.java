@@ -14,7 +14,7 @@ import java.util.*;
 /**
  * Description of User.
  *
- * @author kamal berriga
+ * @author Mehrdad A.Karami
  */
 @Entity
 @Table(name = "user")

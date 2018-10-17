@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 /**
  * This Service class for providing the user credentials from the database.
  *
- * @author kamal berriga
+ * @author Mehrdad A.Karami
  */
 @Service
 public class AppUserDetailsService implements UserDetailsService {
