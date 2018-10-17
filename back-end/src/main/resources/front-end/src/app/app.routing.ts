@@ -7,11 +7,11 @@ import {MainComponent} from "./components/main/main.component";
 
 const appRoutes: Routes = [
   {path: 'profile', component: ProfileComponent, canActivate: [UrlPermission]},
-  {path: 'main', component: MainComponent, canActivate: [UrlPermission]},
+  {path: '', component: MainComponent, redirectTo: 'home', canActivate: [UrlPermission]},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
 
-  // otherwise redirect to profile
+  // otherwise redirect to main
   {path: '**', redirectTo: '/login'}
 ];
 
