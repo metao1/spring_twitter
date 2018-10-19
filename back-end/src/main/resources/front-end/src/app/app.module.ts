@@ -18,6 +18,11 @@ import {PostsService} from "./services/posts.service";
 import {NewPostComponent} from './components/new-post/new-post.component';
 import {MainComponent} from './components/main/main.component';
 import {XhrInterceptor} from "./configs/XhrInterceptor";
+import {CommonModule} from '@angular/common';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ExpandableTextAreaDirective} from './expandableTextArea.directive';
+import {AppHighlightDirective} from './app-highlight.directive';
+import { TextAreaComponent } from './components/text-area/text-area.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +32,20 @@ import {XhrInterceptor} from "./configs/XhrInterceptor";
     ProfileComponent,
     PostsComponent,
     NewPostComponent,
-    MainComponent
+    MainComponent,
+    ExpandableTextAreaDirective,
+    AppHighlightDirective,
+    TextAreaComponent
+  ],
+  exports: [
+    FormsModule,
+    HttpModule,
+    CommonModule,
   ],
   providers: [AuthService, PostsService, AccountService, UrlPermission
     , {provide: HTTP_INTERCEPTORS, useClass: XhrInterceptor, multi: true}],
   imports: [
-    HttpClientModule,
+    HttpClientModule, BrowserAnimationsModule,
     BrowserModule, HttpModule, FormsModule, routing, FacebookModule.forRoot(),
   ],
   bootstrap: [AppComponent]

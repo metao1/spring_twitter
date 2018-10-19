@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.5",
+    "@types/jquery": "^3.3.20",
     "angular4-social-login": "^1.0.13",
     "boostrap": "^2.0.0",
     "bootstrap": "^3.3.7",

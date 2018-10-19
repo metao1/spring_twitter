@@ -30,7 +30,6 @@ export class PostsComponent implements OnInit {
       this.postService.getPosts(this.currentUser, headers)
         .subscribe(result => {
             if (result) {
-              console.log(JSON.stringify(result));
               this.items = result;
             }
           },

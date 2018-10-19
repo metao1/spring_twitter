@@ -145,14 +145,111 @@
             </div>
 
             <ul class="nav right-actions">
-              <li class="me dropdown session js-session" data-global-action="t1me" id="user-dropdown">
-                <a aria-haspopup="true" class="btn js-tooltip settings dropdown-toggle js-dropdown-toggle"
-                   data-placement="bottom" href="/settings" id="user-dropdown-toggle" rel="noopener" role="button"
-                   title="Profile and settings">
-                  <img alt="Profile and settings" class="Avatar Avatar--size32" data-user-id="1052264039412191233"
-                       src="https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png">
-                </a>
+              <li
+                [ngClass]="{'me': true ,'dropdown': true, 'session': true ,'js-session': true, 'open': openDropDown }"
+                data-global-action="t1me" id="user-dropdown">
+                <img alt="Profile and settings" class="Avatar Avatar--size32" data-user-id="1052264039412191233"
+                     src="https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png"
+                     (click)="openDropDownClick()">
+                <div class="DashUserDropdown dropdown-menu dropdown-menu--rightAlign is-forceRight is-autoCentered">
+                  <div class="js-first-tabstop" tabindex="0"></div>
+                  <div class="dropdown-caret">
+                    <span class="caret-outer"></span>
+                    <span class="caret-inner"></span>
+                  </div>
+                  <ul tabindex="-1" role="menu" aria-labelledby="user-dropdown-toggle" aria-hidden="true">
 
+
+                    <li class="DashUserDropdown-userInfo" data-name="user-info" role="presentation">
+                      <a href="/MAllahkarami" class="DashUserDropdown-userInfoLink js-nav" data-nav="view_profile"
+                         role="menuitem">
+                        <b class="fullname">Mehrdad Allahkarami</b><span class="UserBadges"></span>
+                        <p class="name"><span class="username u-dir u-textTruncate"
+                                              dir="ltr">@<b>MAllahkarami</b></span></p>
+                      </a>
+                    </li>
+
+                    <li class="dropdown-divider" role="presentation"></li>
+
+                    <li class="current-user" data-name="profile" role="presentation">
+                      <a href="/MAllahkarami" class="js-nav" data-nav="view_profile" role="menuitem">
+                        <span class="DashUserDropdown-linkIcon Icon Icon--medium Icon--me"></span>Profile
+                      </a>
+                    </li>
+
+
+                    <li data-name="lists" role="presentation">
+                      <a class="js-nav" href="/MAllahkarami/lists" data-nav="all_lists" role="menuitem">
+                        <span class="DashUserDropdown-linkIcon Icon Icon--medium Icon--list"></span>Lists
+                      </a>
+                    </li>
+
+
+                    <li data-name="moments" role="presentation">
+                      <a class="js-nav" href="/MAllahkarami/moments" data-nav="all_moments" role="menuitem">
+                        <span class="DashUserDropdown-linkIcon Icon Icon--medium Icon--lightning"></span>Moments
+                      </a>
+                    </li>
+
+                    <li class="dropdown-divider" role="presentation"></li>
+
+
+                    <li role="presentation">
+                      <a href="https://ads.twitter.com/?ref=gl-tw-tw-twitter-ads" target="_blank" data-nav="ads"
+                         rel="noopener" role="menuitem">
+                        <span class="DashUserDropdown-linkIcon Icon Icon--medium Icon--promotedStroked"></span>Twitter
+                        Ads
+                      </a>
+                    </li>
+
+
+                    <li role="presentation">
+                      <a class="user-dropdown-analytics" href="https://analytics.twitter.com/" target="_blank"
+                         data-nav="user_dropdown_analytics" rel="noopener" role="menuitem">
+                        <span class="DashUserDropdown-linkIcon Icon Icon--medium Icon--analytics"></span>Analytics
+                      </a>
+                    </li>
+
+
+                    <li class="dropdown-divider" role="presentation"></li>
+
+
+                    <li role="presentation"><a href="/settings" data-nav="settings" class="js-nav" rel="noopener"
+                                               role="menuitem">Settings and privacy</a></li>
+
+
+                    <li role="presentation"><a href="//support.twitter.com" data-nav="help_center" rel="noopener"
+                                               role="menuitem">Help Center</a></li>
+
+
+                    <li class="js-keyboard-shortcut-trigger" data-nav="shortcuts" role="presentation">
+                      <button type="button" class="dropdown-link" role="menuitem">Keyboard shortcuts</button>
+                    </li>
+
+
+                    <li class="js-signout-button" id="signout-button" data-nav="logout" role="presentation">
+                      <button type="button" class="dropdown-link" role="menuitem">Log out</button>
+                      <form class="t1-form dropdown-link-form signout-form" id="signout-form" action="/logout"
+                            method="POST">
+                        <input type="hidden" value="91ea77f3a838494908d5b7cb28a758c1faa84e93" name="authenticity_token"
+                               class="authenticity_token">
+                        <input type="hidden" name="reliability_event" class="js-reliability-event">
+                        <input type="hidden" name="scribe_log">
+                      </form>
+                    </li>
+
+
+                    <li class="dropdown-divider" role="presentation"></li>
+                    <li class="current-user nightmode-toggle" data-name="profile" role="presentation">
+                      <a class="js-nav" data-nav="view_profile" role="menuitem">
+          <span class="DashUserDropdown-linkIcon Icon Icon--medium js-nightmode-icon Icon--crescent">
+          </span><span class="js-nightmode-label">Night mode</span>
+                      </a>
+                    </li>
+
+                  </ul>
+                  <div class="js-last-tabstop" tabindex="0"></div>
+                </div>
 
               </li>
               <li aria-labelledby="global-new-tweet-button" class="topbar-tweet-btn" role="complementary">
@@ -294,7 +391,7 @@
           <div class="stream">
             <ol class="stream-items js-navigable-stream" id="stream-items-id">
 
-           <app-posts></app-posts>
+              <app-posts></app-posts>
             </ol>
             <div class="stream-footer">
               <div class="timeline-end has-items">
