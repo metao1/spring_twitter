@@ -1,1 +1,5 @@
-<textarea #inputField [@slideInOut]="textAreaOpen" [appHighlight]="color" [ngClass]="{'tweet-box-shadow': true, 'hidden': this.openTextArea === false ? 'hidden' : ''}" aria-hidden="true" autofocus></textarea>
+<textarea #inputField  [@slideInOut]="textAreaOpen"
+          [ngClass]="{'tweet-box-shadow': true, 'hidden': this.openTextArea === false ? 'hidden' : ''}"
+          [(ngModel)]="value"
+          (keyup)="onValueChanged(inputField.value)"
+          aria-hidden="true" autofocus></textarea>

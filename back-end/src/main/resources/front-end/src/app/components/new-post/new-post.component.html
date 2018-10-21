@@ -222,7 +222,12 @@
           <span class="ComposerDragHelp-text"></span>
         </div>
         <span class="visuallyhidden" id="tweet-box-home-timeline-label">Tweet text</span>
-        <text-area (focusout)="toggleHelpMenu()" [ngClass]="{'tweet-box-shadow': true, 'hidden': !this.openTextArea}"></text-area>
+
+        <text-area (focusout)="toggleHelpMenu()" [ngClass]="{'tweet-box-shadow': true, 'hidden': !this.openTextArea}"
+                   [(ngModel)]="textAreaValue"
+                   [ngModelOptions]="{standalone: true}"
+                   ngDefaultControl
+                   (textValueChangedParent)="displayValue($event)"></text-area>
         <div class="RichEditor RichEditor--emojiPicker" (click)="toggleHelpMenu()"
              [ngClass]="{'tweet-box-shadow': true, 'hidden': this.openTextArea}">
 
@@ -358,7 +363,7 @@
           <div class="RichEditor-mozillaCursorWorkaround">&nbsp;</div>
         </div>
       </div>
-      <div [ngClass]="{'TweetBoxToolBox': this.openTextArea}" [ngStyle]="{'display': !this.openTextArea ? 'none' :''}">
+      <div class="TweetBoxToolBox" [ngStyle]="{'display': !this.openTextArea ? 'none' :''}">
         <div class="TweetBoxExtras tweet-box-extras">
       <span class="TweetBoxExtras-item TweetBox-mediaPicker">
 <div class="photo-selector">
@@ -400,8 +405,8 @@
   </div>
 </div>
 </span>
-
-          <span class="TweetBoxExtras-item"><div class="PollCreator">
+          <span class="TweetBoxExtras-item">
+<div class="PollCreator">
   <button class="btn icon-btn PollCreator-btn js-tooltip" type="button" data-delay="150" tabindex="0"
           data-original-title="Add poll">
     <span class="PollCreator-icon Icon Icon--pollBar"></span>
@@ -409,8 +414,6 @@
   </button>
 </div>
 </span>
-
-
           <span class="TweetBoxExtras-item"><div class="geo-picker dropdown">
   <button class="btn js-geo-search-trigger geo-picker-btn icon-btn js-tooltip disabled js-dropdown-toggle" type="button"
           data-delay="150" aria-haspopup="true" data-original-title="Location disabled">
@@ -421,7 +424,6 @@
   <input type="hidden" name="place_id" value="">
 </div>
 </span>
-
           <div class="TweetBoxUploadProgress">
             <div class="TweetBoxUploadProgress-uploading">
               Uploading
@@ -444,9 +446,9 @@
             data-original-title="Add another Tweet">
   <span class="Icon Icon--add Icon--medium"></span>
 </button>
-
         </span>
-          <button class="tweet-action EdgeButton EdgeButton--primary js-tweet-btn" type="button" [disabled]="textAreaValue.length==0">
+          <button class="tweet-action EdgeButton EdgeButton--primary js-tweet-btn" type="button"
+                  [disabled]="disabledTweetButton">
   <span class="button-text tweeting-text">
     Tweet
   </span>

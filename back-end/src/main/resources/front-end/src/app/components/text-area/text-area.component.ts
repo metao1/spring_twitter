@@ -4,6 +4,11 @@ import {
   ChangeDetectorRef,
   Component,
   ElementRef,
+  EventEmitter,
+  Input,
+  OnChanges,
+  Output,
+  SimpleChanges,
   ViewChild,
   ViewEncapsulation
 } from '@angular/core';
@@ -28,12 +33,17 @@ import {state, style, trigger} from "@angular/animations";
   styleUrls: ['./text-area.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class TextAreaComponent implements AfterViewInit, AfterViewChecked {
+
+export class TextAreaComponent implements AfterViewInit, AfterViewChecked, OnChanges {
 
   @ViewChild('inputField')
   inputField: any;
 
   textAreaOpen: string = 'in';
+
+  @Input() textAreaChangeListener: any;
+
+  @Output() voted = new EventEmitter<string>();
 
   constructor(private cdRef: ChangeDetectorRef) {
   }
@@ -45,11 +55,30 @@ export class TextAreaComponent implements AfterViewInit, AfterViewChecked {
   @ViewChild('textarea')
   textarea: ElementRef;
 
+  @Output() textValueChangedParent = new EventEmitter();
+
+  onValueChanged(e) {
+    this.textValueChangedParent.emit(e);
+  }
+
   //call after re-render after changing the class
   ngAfterViewChecked(): void {
     this.inputField.nativeElement.focus();
     this.textAreaOpen = 'in';
     this.cdRef.detectChanges();
   }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    for (let propName in changes) {
+      let change = changes[propName];
+
+      let curVal = JSON.stringify(change.currentValue);
+      let prevVal = JSON.stringify(change.previousValue);
+      let changeLog = `${propName}: currentValue = ${curVal}, previousValue = ${prevVal}`;
+      console.log(changeLog);
+    }
+    //this.voted.emit(changes);
+  }
+  public value : string;
 
 }

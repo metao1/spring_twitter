@@ -15,14 +15,9 @@ export class NewPostComponent implements OnInit {
 
   openTextArea: boolean;
   textAreaValue: string = "";
-  disabledTweetButton: boolean = this.textAreaValue.length > 0;
+  disabledTweetButton: boolean = false;
 
   constructor() {
-
-  }
-
-  set rapidPageValue(value) {
-    this.disabledTweetButton = value.length > 0;
   }
 
   toggleHelpMenu() {
@@ -31,6 +26,13 @@ export class NewPostComponent implements OnInit {
 
   ngOnInit(): void {
     this.openTextArea = false;
+  }
+
+  displayValue(val) {
+    this.disabledTweetButton = this.textAreaValue.length < 4;
+    if (val.length > 3) {
+      console.log(this.disabledTweetButton);
+    }
   }
 
 }
